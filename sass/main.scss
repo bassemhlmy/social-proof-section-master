@@ -24,8 +24,14 @@ body {
   font-family: 'League Spartan', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-}
+  background: url('../images/bg-pattern-top-mobile.svg') no-repeat top left,
+    url('../images/bg-pattern-bottom-mobile.svg') no-repeat bottom right;
 
+  @media (min-width: 1440px) {
+    background: url('../images/bg-pattern-top-desktop.svg') no-repeat top left,
+      url('../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+  }
+}
 .container {
   max-width: 37.5rem;
   height: 100vh;
